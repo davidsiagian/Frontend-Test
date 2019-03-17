@@ -1,0 +1,78 @@
+<div class="wrapper">
+    <div class="sidebar" data-background-color="black" data-active-color="success">
+        <div class="sidebar-wrapper">
+            <div class="logo" style="border: none !important;box-shadow: none;">
+                <a class="dropdown simple-text" routerLink="/">
+                    Smart Shop
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a routerLink="/dashboard">
+                        <i class="ti-dashboard"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/product">
+                        <i class="ti-tag"></i>
+                        <p>Product</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel" style="background: antiquewhite;">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" routerLink="/dashboard">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row" *ngIf="barData">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">2018 Product Sales</h4>
+                            </div>
+                            <div class="content">
+                                <chart-comp [config]="barConfig" [data]="barData" type="bar"></chart-comp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="pieData">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">This month highest Expense</h4>
+                            </div>
+                            <div class="content">
+                                <chart-comp [config]="pieConfig" [data]="pieData" type="pie"></chart-comp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" *ngIf="lineData">
+                    <div class="col-md-12">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">MONTHLY REVENUE AND EXPENSE IN 2018</h4>
+                            </div>
+                            <div class="content">
+                                <chart-comp [config]="lineConfig" [data]="lineData" type="line"></chart-comp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

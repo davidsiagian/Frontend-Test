@@ -1,0 +1,12 @@
+<div class="wrapper" style="background: antiquewhite">
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" (ngSubmit)="submitForm()" #myForm="ngForm">
+                <h3 class="text-center">Smart Shop</h3>
+                <input type="text" class="form-control" [(ngModel)]="Username" [ngModelOptions]="{standalone: true}" placeholder="Username">
+                <input type="password" class="form-control" [(ngModel)]="Password" [ngModelOptions]="{standalone: true}" placeholder="Password">
+                <button type="submit">login</button>
+            </form>
+        </div>
+    </div>
+</div>

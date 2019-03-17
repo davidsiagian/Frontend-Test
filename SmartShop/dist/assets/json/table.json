@@ -1,0 +1,57 @@
+{
+    "Data":[{
+        "Name":"Iphone XS",
+        "Manufacture" : "Apple",
+        "Released":"2019-02-11",
+        "ImageURL":"https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/apple-iphone-xs/gold/Apple-iPhoneXs-Gold-1-3x.jpg",
+        "Variant":[{
+            "Model":"64 GB"
+        },{
+            "Model":"128 GB"
+        },{
+            "Model":"256 GB"
+        }]
+    },{
+        "Name":"Samsung S10",
+        "Manufacture" : "Samsung",
+        "Released":"2019-03-06",
+        "ImageURL":"https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/samsung/samsung-galaxy-s10/prism-white/Samsung-Galaxy-S10-Prism-White-1-3x.jpg",
+        "Variant":[{
+            "Model":"128 GB"
+        },{
+            "Model":"512 GB"
+        }]
+    },{
+        "Name":"Oppo F11",
+        "Manufacture" : "Oppo",
+        "Released":"2019-03-20",
+        "ImageURL":"https://www.91-img.com/pictures/132707-v4-oppo-f11-pro-mobile-phone-large-1.jpg",
+        "Variant":[{
+            "Model":"128 GB"
+        }]
+    },{
+        "Name":"Vivo V15",
+        "Manufacture" : "Vivo",
+        "Released":"2019-03-23",
+        "ImageURL":"https://www.91-img.com/pictures/132721-v8-vivo-v15-pro-mobile-phone-large-1.jpg",
+        "Variant":[{
+            "Model":"128 GB"
+        }]
+    },{
+        "Name":"Xiaomi Note 6",
+        "Manufacture" : "Xiaomi",
+        "Released":"2019-03-16",
+        "ImageURL":"https://www.91-img.com/pictures/129556-v10-xiaomi-redmi-note-6-pro-mobile-phone-large-1.jpg",
+        "Variant":[{
+            "Model":"64 GB"
+        }] 
+    },{
+        "Name":"Huawei mate X",
+        "Manufacture" : "Huawei",
+        "Released":"2019-02-26",
+        "ImageURL":"https://cdn2.gsmarena.com/vv/bigpic/huawei-mate-x-.jpg",
+        "Variant":[{
+            "Model":"512 GB"
+        }] 
+    }]
+}

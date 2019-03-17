@@ -1,0 +1,15 @@
+    <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+            <li *ngFor="let nav of menuItems" routerLinkActive="active">
+                <a [routerLink]="[nav.path]" *ngIf="nav.path">
+                    <i class="{{nav.icon}}"></i>
+                    <p>{{nav.title}}</p>
+                </a>
+
+                <a data-toggle="collapse" *ngIf="!nav.path" [href]="'#'+nav.title">
+                    <i class="{{nav.icon}}"></i>
+                    <p>{{nav.title}}<b class="caret"></b></p>
+                </a>
+            </li>
+        </ul>
+    </div>
